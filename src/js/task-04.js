@@ -10,13 +10,13 @@ const updateSpan = () => {
 };
 
 buttonDec.addEventListener('click', () => {
-  counterValue = counterValue - 1;
+  counterValue--;
 
   updateSpan();
 });
 
 buttonInc.addEventListener('click', () => {
-  counterValue = counterValue + 1;
+  counterValue++;
 
   updateSpan();
 });

@@ -5,11 +5,12 @@ const quantityOfCategories = navList.length;
 console.log(`Number of categories: ${quantityOfCategories}`);
 
 navList.forEach((item) => {
-  const [h2Title, ulList] = item.children;
+  const title = item.querySelector('h2');
+  const list = item.querySelector('ul');
 
-  const title = h2Title.textContent;
-  const quantityOfElements = ulList.children.length;
+  const text = title.textContent;
+  const quantityOfElements = list.children.length;
 
-  console.log(`Category: ${title}`);
+  console.log(`Category: ${text}`);
   console.log(`Elements: ${quantityOfElements}`);
 });
