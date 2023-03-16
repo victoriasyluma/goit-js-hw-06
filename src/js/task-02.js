@@ -9,6 +9,8 @@ const ingredients = [
 
 const ingredientsList = document.getElementById('ingredients');
 
-ingredientsList.innerHTML = ingredients
+const items = ingredients
   .map((ingredient) => `<li class="item">${ingredient}</li>`)
   .join('');
+
+ingredientsList.insertAdjacentHTML('beforeend', items);

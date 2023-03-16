@@ -4,7 +4,7 @@ const dataLength = validationInput.getAttribute('data-length');
 console.log(dataLength);
 
 validationInput.addEventListener('blur', () => {
-  const isValidValue = validationInput.value.length <= Number(dataLength);
+  const isValidValue = validationInput.value.length === Number(dataLength);
 
   if (isValidValue) {
     validationInput.classList.add('valid');
